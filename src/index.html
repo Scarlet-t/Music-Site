@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+
+    <!-- Change this to your name-->
+    <meta name="Jenny Zhang" content="Jenny Zhang" />
+
+    <title>WEB222 Music App</title>
+    <!-- Classless CSS Stylesheet - https://watercss.kognise.dev/ -->
+    <link rel="stylesheet" href="./css/water.css" />
+        <!--css-->
+        <style>
+          #cards-list {
+            background-color: #161f27;
+            overflow: scroll;
+            border: hidden;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 700px;
+            height: 500px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+    
+          .card {
+            display: inline-block;
+            background-color: #202b38;
+            border: hidden;
+            border-radius: 30px;
+            border-color: #7a8e97;
+            width: 300px;
+            height: 400px;
+            padding-top: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            vertical-align: top;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+    
+          .album-cover {
+            width: 250px;
+            height: 250px;
+            border: solid;
+            border-color: #3c434c;
+            border-width: 5px;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+          }
+    
+          .card:hover {
+            position: relative;
+            left: -8px;
+            top: -8px;
+            box-shadow: 8px 8px 10px #131115;
+            cursor: pointer;
+          }
+    
+          .song-info {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+    
+          .song-info > tr:nth-child(odd) {
+            background-color: #161f27;
+          }
+    
+          .row-title {
+            font-weight: bold;
+          }
+        </style>
+  </head>
+  <body>
+    <header>
+      <!-- Change this to your App's info -->
+      <h1>Corruption Arc</h1>
+      <p>Funny little songs for fun times with friends n family!!! (genre: alternative)</p>
+    </header>
+
+    <nav id="menu">
+      <!-- Dynamically create your menu category buttons here -->
+    </nav>
+
+    <hr />
+
+    <main>
+      <h2 id="selected-artist">
+        <!-- Dynamically update the selected category title -->
+      </h2>
+
+      <!--card plan-->
+
+      <div id="cards-list">
+        <!--c
+        <div class="card">
+          <img src="https://f4.bcbits.com/img/a2815935814_2.jpg" class="album-cover" />
+          <table class="song-info">
+            <tr>
+              <td class="row-title">Song Name:</td>
+              <td>Name</td>
+            </tr>
+            <tr>
+              <td class="row-title">Year Recorded:</td>
+              <td>ajcsdvajcsdvajcsdvajcsdvajcsdvajcsdv</td>
+            </tr>
+            <tr>
+              <td class="row-title">Duration (mm:ss):</td>
+              <td>ajcsdv</td>
+            </tr>
+          </table>
+        </div>
+        -->
+      </div>
+    </main>
+
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+
+    <footer>
+      <h3>Join Our Newsletter</h3>
+      <p>enter your email below to get updates!</p>
+      <form id="newsletter" action="https://httpbin.org/post" method="POST">
+        <input type="email" id="email" required>
+        <button type="submit">Submit!!</button>
+      </form>
+      <p id="submitted-message"></p>
+    </footer>
+
+  </body>
+</html>
